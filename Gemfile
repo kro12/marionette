@@ -23,6 +23,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'underscore-rails'
 gem 'backbone-rails', '1.0.0'
 gem 'marionette-rails'
 

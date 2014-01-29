@@ -134,6 +134,7 @@ GEM
     uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    underscore-rails (1.5.2)
     unicorn (4.8.0)
       kgio (~> 2.6)
       rack
@@ -153,4 +154,5 @@ DEPENDENCIES
   rb-fsevent
   sass-rails
   uglifier (>= 1.0.3)
+  underscore-rails
   unicorn

@@ -14,5 +14,6 @@
 //= require jquery_ujs
 //= require backbone-rails
 //= require backbone.marionette
+//= require underscore
 //= require_tree .
 //= require_tree ./lib
