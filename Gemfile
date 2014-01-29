@@ -26,6 +26,9 @@ gem 'jquery-rails'
 gem 'backbone-rails', '1.0.0'
 gem 'marionette-rails'
 
+gem 'rb-fsevent'
+gem 'guard-livereload'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
