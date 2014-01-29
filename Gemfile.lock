@@ -1,3 +1,14 @@
+GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: 49aebde435cf556a9a897f83babfc1f4e7f4a4cc
+  ref: 49aebde
+  specs:
+    devise (3.0.0.rc)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      warden (~> 1.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -29,7 +40,9 @@ GEM
     atomic (1.1.14)
     backbone-rails (1.0.0)
       rails (>= 3.0.0)
+    bcrypt-ruby (3.1.2)
     builder (3.1.4)
+    cancan (1.6.10)
     celluloid (0.15.2)
       timers (~> 1.1.0)
     coderay (1.1.0)
@@ -80,6 +93,7 @@ GEM
     mime-types (1.25.1)
     minitest (4.7.5)
     multi_json (1.8.4)
+    orm_adapter (0.5.0)
     pg (0.17.1)
     polyglot (0.3.3)
     pry (0.9.12.6)
@@ -139,13 +153,17 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   backbone-rails (= 1.0.0)
+  cancan
   coffee-rails
+  devise!
   guard-livereload
   jquery-rails
   marionette-rails

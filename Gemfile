@@ -30,6 +30,10 @@ gem 'marionette-rails'
 gem 'rb-fsevent'
 gem 'guard-livereload'
 
+# Use Devise for user authentication
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git', :ref => '49aebde'
+gem 'cancan'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
