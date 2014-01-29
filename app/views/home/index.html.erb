@@ -18,23 +18,30 @@
 	<p>Text from a different template...</p>
 </script>
 
+<script type="text/template" id="list-item-template">
+	<li>One item</li>
+</script>
+
 <script type="text/javascript">
 	var ContactManager = new Marionette.Application();
+
+	ContactManager.Contact = Backbone.Model.extend({});
 
 	ContactManager.addRegions({
 		mainRegion: "#main-region"
 	});
 
   ContactManager.StaticView = Marionette.ItemView.extend({
+  	tagName: "ul",
   	template: "#static-template"
   });
 
 	ContactManager.on("initialize:after", function(){
 		var staticView = new ContactManager.StaticView({
-			id: "static-view",
-			tagName: "span",
-			className: "instruction",
-			template: "#different-static-template"
+			// id: "static-view",
+			// tagName: "ul",
+			// className: "instruction",
+			template: "#list-item-template"
      });
 		ContactManager.mainRegion.show(staticView);
 	});
