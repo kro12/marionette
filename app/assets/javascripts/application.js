@@ -16,5 +16,5 @@
 //= require backbone.marionette
 //= require underscore
 //= require_tree .
-//= require_tree ./apps
+//= require_tree ./js
 //= require_tree ./lib
